@@ -2,4 +2,4 @@ Armamos un grafo donde un hoyo entre $i$ y $j$ implica que existe una arista ent
 
 Para hallar la mayor medida en la cuál es posible ubicar lo números podemos ordenar las aristas en base a su medida. Luego podemos iterar desde la mayor, tomando cada medida como máxima, construyendo el grafo ignorando medidas menores y verificando la condición descrita en base a las componentes conectadas. Iteramos hasta llegar al primer valor en el que la condición se cumpla. Esto toma $O(M \log M)$ + $O(M * (M + N))$ lo cual es tiempo $O(M^2 + M \times N)$. Con esto se puede pasar la primera subtarea.
 
-Para optimizar el tiempo podemos utilizar búsqueda binaria para encontrar la mayor medida luego de ordenarlas, dando una complejidad asintótica de $O(\log M * (M + N)$
+Para optimizar el tiempo podemos utilizar búsqueda binaria para encontrar la mayor medida luego de ordenarlas, dando una complejidad asintótica de $O(\log M * (M + N))$
